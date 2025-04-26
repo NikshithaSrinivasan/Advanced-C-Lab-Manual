@@ -64,35 +64,29 @@ Algorithm:
  
 Program:
 ```
-#include<stdio.h>
-typedef struct nums
+#include <stdio.h>
+struct addition
 {
-    float r;
-    float im;
-    
-}num;
-
-float add(num n1,num n2);
-
+    int a,b,c;
+};
+struct addition get(struct addition add)
+{
+    struct addition a;
+    scanf("%d %d",&a.a, &a.b);
+    a.c = a.a+a.b;
+    return a;
+}
 int main()
 {
-    num n1,n2;
-    scanf("%f%f",&n1.r,&n1.im);
-    scanf("%f%f",&n2.r,&n2.im);
-    add(n1,n2);
-    return 0;
-}
-float add(num n1,num n2)
-{
-    //nums n1,n2;
-    float a=n1.r+n2.r;
-    float b=n1.im+n2.im;
-    printf("Sum = %.1f + %.1fi",a,b);
-    return 0;
+    //ptr->c=ptr->a+ptr->b;
+    //return ptr->c;
+    struct addition b = get(b);
+    printf("%d",b.c);
 }
 ```
 Output:
-![WhatsApp Image 2025-04-26 at 10 27 18_d550dc31](https://github.com/user-attachments/assets/3a06ac87-5baa-4d15-8df7-f8b5231f2f27)
+![WhatsApp Image 2025-04-26 at 10 56 29_439b45b8](https://github.com/user-attachments/assets/11b494dc-1fc6-49a2-827b-26780c60ac33)
+
 Result:
 Thus, the program is verified successfully
 
