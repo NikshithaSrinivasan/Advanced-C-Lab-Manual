@@ -138,22 +138,44 @@ Free the memory allocated for each string in s Free the memory allocated for s
 7.	End
  
 Program:
-
-//type your code here
-
-
+```
+#include<stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    char arr[50][50];
+    for(int i=0;i<n;i++)
+    {
+        scanf("%s",arr[i]);
+    }
+    if(n==2)
+    {
+        printf("%s %s\n",arr[0],arr[1]);
+        printf("%s %s",arr[1],arr[0]);
+    }
+    else
+    {
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<n;j++)
+            {
+                for(int k=0;k<n;k++)
+                {
+                    if(i!=j && j!=k && k!=i)
+                    {
+                        printf("%s %s %s\n",arr[i],arr[j],arr[k]);
+                    }
+                }
+            }
+        }
+    }
+}
+```
 
 
 Output:
-
-
-//paste your output here
-
-
-
-
-
-
+![WhatsApp Image 2025-04-26 at 11 32 21_04209d4a](https://github.com/user-attachments/assets/b657e591-26f4-4f48-8836-0e12e25a9b9d)
 Result:
 Thus, the program is verified successfully
  
@@ -171,22 +193,32 @@ Algorithm:
 7.	End
  
 Program:
-
-//type your code here
-
+```
+#include<stdio.h>
+int main()
+{
+    int n,min;
+    scanf("%d",&n);
+    for(int i=0;i<2*n-1;i++)
+    {
+        for(int j=0;j<2*n-1;j++)
+        {
+            min=i;
+            if(j<min)min=j;
+            if((2*n-2-i)<min)min=(2*n-2-i);
+            if((2*n-2-j)<min)min=(2*n-2-j);
+            printf("%d ",n-min);
+        }
+         printf("\n");
+       
+    }
+}
+```
 
 
 
 Output:
-
-
-//paste your output here
-
-
-
-
-
-
+![WhatsApp Image 2025-04-26 at 11 36 28_9f4256f7](https://github.com/user-attachments/assets/59dc1186-7ed3-44e2-b5fa-c1db6c699617)
 Result:
 Thus, the program is verified successfully
 
