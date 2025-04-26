@@ -66,7 +66,9 @@ int main()
 }
 ```
 Output:
-![WhatsApp Image 2025-04-26 at 11 10 27_0eb0f371](https://github.com/user-attachments/assets/411f0e6c-61c0-4a3e-a07e-38024b834383)
+ 
+ ![WhatsApp Image 2025-04-26 at 11 10 27_0eb0f371](https://github.com/user-attachments/assets/411f0e6c-61c0-4a3e-a07e-38024b834383)
+
 
 Result:
 Thus, the program is verified successfully
@@ -175,7 +177,10 @@ int main()
 
 
 Output:
+
 ![WhatsApp Image 2025-04-26 at 11 32 21_04209d4a](https://github.com/user-attachments/assets/b657e591-26f4-4f48-8836-0e12e25a9b9d)
+
+
 Result:
 Thus, the program is verified successfully
  
@@ -218,7 +223,10 @@ int main()
 
 
 Output:
+
 ![WhatsApp Image 2025-04-26 at 11 36 28_9f4256f7](https://github.com/user-attachments/assets/59dc1186-7ed3-44e2-b5fa-c1db6c699617)
+
+
 Result:
 Thus, the program is verified successfully
 
