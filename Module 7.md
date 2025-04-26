@@ -63,20 +63,36 @@ Algorithm:
 7.	Return 0
  
 Program:
+```
+#include<stdio.h>
+typedef struct nums
+{
+    float r;
+    float im;
+    
+}num;
 
-//type your code here
+float add(num n1,num n2);
 
-
-
-
+int main()
+{
+    num n1,n2;
+    scanf("%f%f",&n1.r,&n1.im);
+    scanf("%f%f",&n2.r,&n2.im);
+    add(n1,n2);
+    return 0;
+}
+float add(num n1,num n2)
+{
+    //nums n1,n2;
+    float a=n1.r+n2.r;
+    float b=n1.im+n2.im;
+    printf("Sum = %.1f + %.1fi",a,b);
+    return 0;
+}
+```
 Output:
-
-
-//paste your output here
-
-
-
-
+![WhatsApp Image 2025-04-26 at 10 27 18_d550dc31](https://github.com/user-attachments/assets/3a06ac87-5baa-4d15-8df7-f8b5231f2f27)
 Result:
 Thus, the program is verified successfully
 
@@ -124,19 +140,7 @@ int main()
 }
 ```
 Output:
-
-
-//paste your output here
-
-
-
-
-
-
-
-
-
-
+![mod 7 3](https://github.com/user-attachments/assets/d2a168ed-3bd9-406c-9d94-5f1660f35ac5)
 
 Result:
 Thus, the program is verified successfully
