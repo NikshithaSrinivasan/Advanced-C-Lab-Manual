@@ -231,21 +231,41 @@ Algorithm:
 13.End the program by returning 0.
 
 Program:
+```
+#include <stdio.h>
+#include <stdlib.h>
 
-//type your code here
+struct Subject {
+    char name[100];
+    int marks;
+};
 
-
-
-
+int main() {
+    int n, i;
+    struct Subject *s;
+    printf("Enter the number of subjects: ");
+    scanf("%d", &n);
+    s = (struct Subject *)malloc(n * sizeof(struct Subject));
+    if (s == NULL)
+    {
+        printf("Memory allocation failed.\n");
+        return 1; 
+    }
+    for (i = 0; i < n; i++) {
+        printf("Enter name of subject %d: ", i + 1);
+        scanf("%s", s[i].name);
+        printf("Enter marks for %s: ", s[i].name);
+        scanf("%d", &s[i].marks);
+    }
+    printf("\nSubject Details:\n");
+    for (i = 0; i < n; i++) {
+        printf("Subject %d: %s, Marks: %d\n", i + 1, s[i].name, s[i].marks);
+    }
+    free(s);
+    return 0;
+}
+```
 Output:
-
-
-//paste your output here
-
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/23be774e-9463-48f9-a1c2-05837bd6f95d)
 Result:
 Thus, the program is verified successfully
