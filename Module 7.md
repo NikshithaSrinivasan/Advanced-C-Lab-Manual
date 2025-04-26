@@ -266,6 +266,9 @@ int main() {
 }
 ```
 Output:
+
 ![image](https://github.com/user-attachments/assets/23be774e-9463-48f9-a1c2-05837bd6f95d)
+
+
 Result:
 Thus, the program is verified successfully
