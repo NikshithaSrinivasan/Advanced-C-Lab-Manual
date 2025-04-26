@@ -168,21 +168,30 @@ Use scanf to input the file name into the name array and the number of strings i
 5.	Return 0 to indicate successful program execution.
  
 Program:
-
-//type your code here
-
-
-
-
+```
+#include <stdio.h>
+int main()
+{
+    FILE *fp;
+    char ch[20],ele[20];
+    int n;
+    scanf("%s %d",ch,&n);
+    fp=fopen(ch,"w");
+    if(fp!=NULL)
+    {
+        printf("%s Opened\n",ch);
+    }
+    for(int i=1;i<=n;i++)
+    {
+        scanf("%s",ele);
+        fprintf(fp,"%s",ele);
+    }
+    printf("Data added Successfully");
+    fclose(fp);
+}
+```
 Output:
-
-
-//paste your output here
-
-
-
-
-
+![WhatsApp Image 2025-04-26 at 10 30 10_6a0ac5b6](https://github.com/user-attachments/assets/76a8b7c8-d4ed-4265-823b-7212f2c1e3cf)
 
 Result:
 Thus, the program is verified successfully
