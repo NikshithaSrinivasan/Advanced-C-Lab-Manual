@@ -83,18 +83,36 @@ Algorithm:
 6.	End
  
 Program:
-
-//type your code here
-
-
-
-
+```
+#include<stdio.h>
+#include<ctype.h>
+int main()
+{
+    char str[20];
+    scanf("%s",str);
+    int sum=0;
+    for(int j=48;j<=51;j++)
+    {
+        for(int i=0;str[i]!='\0';i++)
+        {
+            if(isdigit(str[i]))
+            {
+                if((int)str[i]==j)
+                {
+                    sum+=1;
+                }
+            }
+        }
+        printf("%d ",sum);
+        sum=0;
+    }
+}
+```
 Output:
 
 
-//paste your output here
 
-
+![image](https://github.com/user-attachments/assets/41764202-1ea5-438c-900c-a467f5dab442)
 
 
 
