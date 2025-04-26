@@ -104,12 +104,22 @@ Use scanf to input the file name into the name array.
 5.	Return 0 to indicate successful program execution.
  
 Program:
-
-//type your code here
-
-
-
-
+#include <stdio.h>
+int main()
+{
+    FILE *fp;
+    char ch[40];
+    scanf("%s",ch);
+    fp=fopen(ch,"w");
+    if(fp!=NULL)
+    {
+        printf("%s File Created Successfully\n%s File Opened\n",ch,ch);
+        
+    }
+    fclose(fp);
+    printf("%s File Closed",ch);
+    
+}
 Output:
 
 
