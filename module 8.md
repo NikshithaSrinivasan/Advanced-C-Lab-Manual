@@ -15,21 +15,58 @@ Algorithm:
 4.	Exit the program.
  
 Program:
-
-//type your code here
-
-
-
-
+```
+#include<stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    switch(n)
+    {
+        case 21:
+        printf("twenty one");
+        break;
+        
+        case 22:
+        printf("twenty two");
+        break;
+        
+        case 23:
+        printf("twenty three");
+        break;
+        
+        case 24:
+        printf("twenty four");
+        break;
+        
+        case 25:
+        printf("twenty five");
+        break;
+        
+        case 26:
+        printf("twenty six");
+        break;
+        
+        case 27:
+        printf("twenty seven");
+        break;
+        
+        case 28:
+        printf("twenty eight");
+        break;
+        
+        case 29:
+        printf("twenty nine");
+        break;
+        
+        default:
+        printf("Greater than 29");
+        break;
+    }
+}
+```
 Output:
-
-
-//paste your output here
-
-
-
-
-
+![WhatsApp Image 2025-04-26 at 11 10 27_0eb0f371](https://github.com/user-attachments/assets/411f0e6c-61c0-4a3e-a07e-38024b834383)
 
 Result:
 Thus, the program is verified successfully
