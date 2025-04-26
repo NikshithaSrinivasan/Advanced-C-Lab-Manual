@@ -15,6 +15,7 @@ Else
 6.	Return 0
  
 Program:
+```
 #include<stdio.h>
 typedef struct
 {
@@ -37,7 +38,7 @@ int main()
         printf("eligibility:no");
     }
 }
-
+```
 
 Output:
 ![mod 7 1](https://github.com/user-attachments/assets/189070ac-0b35-4107-9406-ca8aaccf8c67)
@@ -104,6 +105,7 @@ Use scanf to input the file name into the name array.
 5.	Return 0 to indicate successful program execution.
  
 Program:
+```
 #include <stdio.h>
 int main()
 {
@@ -120,6 +122,7 @@ int main()
     printf("%s File Closed",ch);
     
 }
+```
 Output:
 
 
