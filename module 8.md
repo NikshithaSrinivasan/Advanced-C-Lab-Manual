@@ -250,8 +250,23 @@ o	Call the square() function and display the result.
 5.	End.
 
 Program:
+```
+#include <stdio.h>
+int square() 
+{
+    int num;
+    scanf("%d", &num);
+    return num * num;
+}
 
-//type your code here
+int main() 
+{
+    int result;
+    result = square(); 
+    printf("The square of the number is: %d\n", result);
+    return 0;
+}
+```
 
 
 
@@ -259,7 +274,8 @@ Program:
 Output:
 
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/c56cfeb3-5dc8-4740-8811-af9a031b083f)
+
 
 
 
