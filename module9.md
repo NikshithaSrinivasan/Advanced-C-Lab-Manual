@@ -48,12 +48,16 @@ Algorithm:
 4.	Call the push function as needed.
  
 Program:
-
-//type your code here
-
+```
+int size=3,top=-1,stack[100];
+void push (int data)
+{
+    stack[++top]=data;
+}
+```
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/86c87b0c-43bf-465b-ae78-effdaf2218f9)
 
 
 
@@ -74,12 +78,28 @@ Algorithm:
 4.	Call the display function and perform other queue operations as needed.
  
 Program:
-
-//type your code here
+```
+float queue[50];
+int front,rear;
+void display()
+{
+    if(front==-1 && rear==-1)
+    {
+        printf("No elements to display\n");
+    }
+    else
+    {
+        for(int i=front;i<=rear;i++)
+        {
+            printf("%.1f\n",queue[i]);
+        }
+    }
+    
+}
+```
 
 Output:
-
-//paste your output here
+![image](https://github.com/user-attachments/assets/385d526a-1122-456c-97ed-d260293670f0)
 
 
 Result:
@@ -98,12 +118,24 @@ Algorithm:
 4.	Call the enqueue function as needed.
 
 Program:
-
-//type your code here
-
+```
+int front;
+int rear;
+char queue[50];
+void enqueue(char data)
+{
+    if(front==-1)
+    {
+        front=0;
+    }
+    rear++;
+    queue[rear]=data;
+}
+```
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/4a1db557-2bfd-4e3f-a92d-bdd838fb4f24)
+
 
 Result:
 Thus, the program to insert elements in queue using array is verified successfully.
@@ -133,12 +165,29 @@ o	After deletion, check if the front pointer has passed the rear pointer (front 
 
 
 Program:
-
-//type your code here
-
+```
+float queue[50];
+int front, rear;
+void dequeue()
+{
+    if(front==-1 && rear==-1){
+        printf("Queue Underflow.\n");
+    }
+    else if(front<rear)
+    {
+        front++;
+    }
+    else
+    {
+        front=-1;
+        rear=-1;
+        printf("No elements to display");
+    }
+}
+```
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/c79c9095-e570-4d50-8b4e-24d3f8b06af4)
 
 
 Result:
