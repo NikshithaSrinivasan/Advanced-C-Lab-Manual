@@ -12,12 +12,25 @@ Algorithm:
 7.	Use the display function to visualize the stack's contents
  
 Program:
-
-//type your code here
+```
+char stack[100];
+int top,i;
+void display()
+{
+    for(i=top;i>=0;i--)
+    {
+        printf("%c ",stack[i]);
+    }
+    if(top ==-1)
+    {
+        printf("stack is empty\n");
+    }
+}
+```
 
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/365c27fa-b766-4eca-9aa0-285ff51ab253)
 
 
 
